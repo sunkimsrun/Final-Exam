@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function createCounter() {
+            let count = 0;
+            return function () {
+                console.log('SUN KIMSRUN');
+                count++;
+                return count;
+            };
+        }
+        
+        const counter = createCounter();
+        console.log(counter());
+        console.log(counter());
+        console.log(counter());
+    </script>
+</head>
+<body>
+    <p>The output will shown in inspect</p>
+</body>
+</html>
